@@ -8,10 +8,9 @@ import java.util.List;
 
 @Service
 public class TraineeService {
-    private final TraineeMapper traineeMapper;
+    private final TraineeMapper traineeMapper = new TraineeMapper();
 
-    public TraineeService(TraineeMapper traineeMapper) {
-        this.traineeMapper = traineeMapper;
+    public TraineeService() {
     }
 
     public List<Trainee> findAll(){
