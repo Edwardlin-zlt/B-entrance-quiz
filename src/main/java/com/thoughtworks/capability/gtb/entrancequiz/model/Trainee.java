@@ -4,11 +4,15 @@ import java.util.Objects;
 
 public class Trainee {
     private Integer id;
-    private String Name;
+    private String name;
 
     public Trainee(Integer id, String name) {
         this.id = id;
-        Name = name;
+        this.name = name;
+    }
+
+    public Trainee(String name){
+        this.name = name;
     }
 
     public Integer getId() {
@@ -20,11 +24,11 @@ public class Trainee {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     @Override
@@ -33,19 +37,19 @@ public class Trainee {
         if (o == null || getClass() != o.getClass()) return false;
         Trainee trainee = (Trainee) o;
         return Objects.equals(id, trainee.id) &&
-                Objects.equals(Name, trainee.Name);
+                Objects.equals(name, trainee.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, Name);
+        return Objects.hash(id, name);
     }
 
     @Override
     public String toString() {
         return "Trainee{" +
                 "id=" + id +
-                ", Name='" + Name + '\'' +
+                ", Name='" + name + '\'' +
                 '}';
     }
 }
