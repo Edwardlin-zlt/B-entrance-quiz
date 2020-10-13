@@ -8,7 +8,6 @@ import java.util.List;
 public class TraineeMapper {
     public static List<Trainee> trainees = new ArrayList<Trainee>();
     static {
-
         trainees.add(new Trainee(1, "成吉思汗"));
         trainees.add(new Trainee(2, "鲁班七号"));
         trainees.add(new Trainee(3, "太乙真人"));
