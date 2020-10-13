@@ -5,6 +5,7 @@ import com.thoughtworks.capability.gtb.entrancequiz.controller.dto.TraineesRespo
 import com.thoughtworks.capability.gtb.entrancequiz.model.Trainee;
 import com.thoughtworks.capability.gtb.entrancequiz.service.TraineeService;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,6 +21,7 @@ public class TraineeController {
         this.traineeService = traineeService;
     }
 
+    @CrossOrigin()
     @GetMapping()
     public ResponseEntity<TraineesResponse> getAllContacts() {
         List<Trainee> trainees = traineeService.findAll();
