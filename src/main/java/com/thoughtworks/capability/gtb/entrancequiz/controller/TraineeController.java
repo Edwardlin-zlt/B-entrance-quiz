@@ -1,5 +1,5 @@
 package com.thoughtworks.capability.gtb.entrancequiz.controller;
-
+//TODO GTB：删除无用import
 import com.thoughtworks.capability.gtb.entrancequiz.controller.dto.TraineeResponse;
 import com.thoughtworks.capability.gtb.entrancequiz.controller.dto.TraineesResponse;
 import com.thoughtworks.capability.gtb.entrancequiz.model.Trainee;
@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+//TODO GTB：缺少添加学员接口、查找分组接口、自动分组的接口
 @RestController
 @RequestMapping("/trainees")
 public class TraineeController {

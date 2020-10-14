@@ -10,7 +10,7 @@ public class Trainee {
         this.id = id;
         this.name = name;
     }
-
+    //TODO GTB：删掉未用到的构造器
     public Trainee(String name){
         this.name = name;
     }
@@ -18,7 +18,7 @@ public class Trainee {
     public Integer getId() {
         return id;
     }
-
+    //TODO GTB：Lombok了解下
     public void setId(Integer id) {
         this.id = id;
     }
@@ -31,6 +31,7 @@ public class Trainee {
         this.name = name;
     }
 
+    //TODO GTB：下面三个重写的方法，在业务上，目前没有需求
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
